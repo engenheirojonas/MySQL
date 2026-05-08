@@ -24,6 +24,10 @@ values
                         
 # serve para modificar os registros (dados) inseridos nas estruturas (campos) das tabelas #
 
+update venda set StatusPgto='Não Paga'
+where year(DataVenda)=2025 and TipoRecibo='FT' and StatusVenda='N' and StatusPgto='Paga';
+
+
 # para modificar o registro de apenas uma coluna #
 update clientes
 set NomeCliente = 'Josefina' 
